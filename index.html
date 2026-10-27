@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">David Troy Feliciano</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="small-text">Hello, I am</p>
+      <h1>David Troy Feliciano</h1>
+      <h2>IT Technician, Game Developer, Web Developer.</h2>
+      <p>I code Websites, basic Applications, and Games.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-photo glass">
+      <img src="profile.jpg" alt="My profile">
+    </div>
+  </section>
+
+  <section class="section reveal" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="glass about-box">
+      <p>I make simple websites, Build simple microservices applications, Beginner at Game Development, Major knowledge in computer
+        hardware and troubleshooting, Licensed computer technician with NCII certificate. Prior knowledge in mobile device troubleshooting, parts replacements,
+        and physical check up.
+      </p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Mysql</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>Computer Hardware</li>
+        <li>Computer Troubleshooting</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section reveal" id="projects">
+    <h2 class="section-title">My Works</h2>
+    <div class="project-grid">
+
+      <div class="glass project-card">
+        <img src="buildIT.jpg" alt="Project 1">
+        <h3>BuildIT: Learn Computer Assembly</h3>
+        <p>BuildIT, a drag drop game where you will assemble a pc and learn their primary functions. Under development
+          and update.</p>
+        <a href="https://www.mediafire.com/file/cvbx7gus5t2p1x6/BuildIT.apk/file?fbclid=IwY2xjawVNrF9leHRuA2FlbQIxMABwZG9mBWJyaWQRMWlZT1pPT25vV1VPTTFTNDJzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEephw8jAU8lv89__AnTef2Z02AUBuyHRv-KTLKINtXhiuLP14A1Lya-cpwLGo_aem_6yzCCkSn2nRuP_kFhyeW6Q" class="link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="social-links">
+      <a href="mailto:troydavidfeliciano@gmail.com" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.facebook.com/davitroy.feliciano.1Slash" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/dabidtroyee" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://g.page/your-google-profile" target="_blank" rel="noopener" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+    </div>
+
+    <div class="glass contact-box">
+      <form id="contactForm">
+        <input type="text" id="name" name="user_name" placeholder="Your name">
+        <input type="email" id="email" name="user_email" placeholder="Your email">
+        <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+        <button type="submit" class="btn" id="sendBtn">Send Message</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> David Troy Feliciano. All rights reserved.</p>
+  </footer>
+
+  <button id="topBtn" aria-label="Back to top">&#8593;</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
